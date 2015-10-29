@@ -89,12 +89,41 @@ header a {
 	font-size: 2em;
 	font-weight: 300;
 	line-height: 1.2;
-	margin: .5em 0 0;
+	margin: .5em 0 .85em;
 }
 
 .codrops-header h1 span {
 	display: block;
 	font-weight: 700;
+}
+
+/* headlines */
+h2 {
+	
+}
+
+h3 {
+    font-size: 1.15em;
+    line-height: 1;
+    margin: 1.5em 0 .3em;
+    color: #000;
+	opacity: 0.5;
+	font-weight: 300;
+    letter-spacing: -0.022em;
+}
+
+h3 a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 300;
+}
+h3 a:hover {
+	text-decoration: underline;
+}
+
+/* paragraph */
+p {
+	margin: 0 0 1em;
 }
 
 header p {
@@ -103,6 +132,52 @@ header p {
 
 p#copyright {
     opacity: .54;
+	margin: 0;
+	font-size: .9em;
+}
+p#copyright a {
+	color: #fff;
+}
+p#copyright a:hover {
+	opacity: 1.0;
+}
+p#tone {
+	opacity: .54;
+	font-size: .9em;
+}
+
+.role {
+	visibility: hidden;
+}
+
+/* card parameters */
+.card__copy p {
+    margin: 0 auto 1em auto;
+    max-width: 700px;
+}
+.card__copy h3 {
+	margin: 1.5em auto .3em auto;
+	max-width: 700px;
+}
+
+/* images */
+.card__copy img {
+	display: block;
+	margin: 0 auto;
+	padding: 0 0 3em 0;
+	width: 100%;
+}
+
+.halfImg {
+	float: left;
+	width: 49% !important;
+}
+.rightImg {
+	margin-left: 10px !important;
+}
+
+.wideImage {
+	width: 100%;
 }
 
 /* footer */
@@ -114,53 +189,6 @@ footer {
 
 footer p {
 	font-size: 1.15em;
-}
-
-/* Top Navigation Style */
-
-.codrops-links {
-	position: relative;
-	display: inline-block;
-	text-align: center;
-	white-space: nowrap;
-}
-
-.codrops-links::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 2px;
-	height: 100%;
-	margin-left: -1px;
-	background: #ddd;
-	-webkit-transform: rotate3d(0, 0, 1, 22.5deg);
-	transform: rotate3d(0, 0, 1, 22.5deg);
-}
-
-.codrops-icon {
-	display: inline-block;
-	width: 1.5em;
-	margin: .5em;
-	padding: 0em 0;
-	text-decoration: none;
-}
-
-.codrops-icon span {
-	display: none;
-}
-
-.codrops-icon:before {
-	font-family: 'codropsicons';
-	font-weight: normal;
-	font-style: normal;
-	font-variant: normal;
-	line-height: 1;
-	margin: 0 5px;
-	text-transform: none;
-	-webkit-font-smoothing: antialiased;
-
-	speak: none;
 }
 
 .codrops-icon--drop:before {
@@ -231,6 +259,15 @@ footer p {
 	max-width: 1366px;
 	margin: 0 auto;
 }
+@media screen and (max-width: 600px) {
+	.halfImg {
+		float: none;
+		width: 100%;
+	}
+	.rightImg {
+		padding: none;
+	}
+}
 
 @media screen and (max-width: 50em) {
 	.codrops-header,
@@ -246,11 +283,4 @@ footer p {
 		line-height: 1.2;
 	}
 }
-.card__copy img {
-	display: block;
-	margin: 0 auto;
-	padding: 0 0 3em 0;
-}
-.wideImage {
-	width: 100%;
-}
+
