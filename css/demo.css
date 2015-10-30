@@ -54,6 +54,11 @@ footer {
 	transition: opacity 300ms ease-in-out;
 }
 
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
 a {
 	text-decoration: none;
 	color: #de6551;
@@ -80,9 +85,9 @@ header a {
 /* Header */
 
 .codrops-header {
-	padding: 3em 3em 2em 5em;
-	text-align: left;
-	max-width: 520px;
+    margin: 3em 3em 2em 5em;
+    text-align: left;
+    max-width: 425px;
 }
 
 .codrops-header h1 {
@@ -133,7 +138,7 @@ header p {
 p#copyright {
     opacity: .54;
 	margin: 0;
-	font-size: .9em;
+	font-size: .95em;
 }
 p#copyright a {
 	color: #fff;
@@ -143,7 +148,7 @@ p#copyright a:hover {
 }
 p#tone {
 	opacity: .54;
-	font-size: .9em;
+	font-size: .95em;
 }
 
 .role {
@@ -153,11 +158,11 @@ p#tone {
 /* card parameters */
 .card__copy p {
     margin: 0 auto 1em auto;
-    max-width: 700px;
+    max-width: 600px;
 }
 .card__copy h3 {
 	margin: 1.5em auto .3em auto;
-	max-width: 700px;
+	max-width: 600px;
 }
 
 /* images */
@@ -168,23 +173,38 @@ p#tone {
 	width: 100%;
 }
 
+.imgContainer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 750px;
+	clear: both;
+}
+
+.noPadding {
+	padding: 0 !important;
+}
+
 .halfImg {
 	float: left;
 	width: 49% !important;
 }
 .rightImg {
-	margin-left: 10px !important;
+	float: right;
+}
+.iPhoneApp {
+	max-width: 375px;
 }
 
 .wideImage {
 	width: 100%;
+	max-width: 1400px;
 }
 
 /* footer */
 footer {
-	padding: 0 3em 3em 5em;
-	text-align: left;
-	max-width: 520px;
+    margin: 0 3em 3em 5em;
+    text-align: left;
+    max-width: 425px;
 }
 
 footer p {
@@ -274,6 +294,9 @@ footer p {
 	footer {
 		padding: 3em 10% 4em;
 		width: 100%;
+	}
+	.rightImg {
+		margin: 0 auto;
 	}
 }
 
