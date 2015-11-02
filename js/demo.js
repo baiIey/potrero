@@ -13,6 +13,7 @@ var demo = (function(window, undefined) {
     card: '.card',
     cardImage: '.card__image',
     cardClose: '.card__btn-close',
+    cardCloseFooterBtn: '.footerBtn',
   };
 
   /**
@@ -50,7 +51,7 @@ var demo = (function(window, undefined) {
       variance: 1,
       stroke_width: 0.6,
       color_function : function(x, y) {
-        return '#de6551';
+        return '#2BB24C';
       }
     }).svg(); // Render as SVG.
 
@@ -112,9 +113,11 @@ var demo = (function(window, undefined) {
 
       var cardImage = $(card).find(SELECTORS.cardImage);
       var cardClose = $(card).find(SELECTORS.cardClose);
+      var cardCloseFooterBtn = $(card).find(SELECTORS.cardCloseFooterBtn);
 
       $(cardImage).on('click', _playSequence.bind(this, true, i));
       $(cardClose).on('click', _playSequence.bind(this, false, i));
+      $(cardCloseFooterBtn).on('click', _playSequence.bind(this, false, i));
     });
   };
 
