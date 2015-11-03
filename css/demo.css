@@ -28,8 +28,8 @@ body {
 	line-height: 1.5;
 	/* color: #3b393d;
 	background: #f0f0f0; */
-	color: #fff;
-	background: #212121;
+	color: rgba(0,0,0,0.87);
+	background: #F6F7F8;
 	background-size: cover;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -61,7 +61,7 @@ footer {
 
 a {
 	text-decoration: none;
-	color: #2BB24C;
+	color: #48B8B4;
 	outline: none;
 	font-weight: 500;
 }
@@ -141,7 +141,7 @@ p#copyright {
 	font-size: .95em;
 }
 p#copyright a {
-	color: #fff;
+	color: #000;
 }
 p#copyright a:hover {
 	opacity: 1.0;
@@ -183,10 +183,19 @@ p#tone {
     padding: 5px 20px;
     border: 2px solid;
     border-radius: 5px;
-    font-size: 1.35em;
+    font-size: 1em;
+}
+button:hover {
+	background-color: #212121;
+	color: #f6f6f6;
+	font-weight: 500;
 }
 
 /* videos */
+.video-handler {
+	max-width: 750px;
+	margin: 0 auto;	
+}
 .video-container {
     position: relative;
     padding-bottom: 56.25%;

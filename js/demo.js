@@ -51,7 +51,7 @@ var demo = (function(window, undefined) {
       variance: 1,
       stroke_width: 0.6,
       color_function : function(x, y) {
-        return '#2BB24C';
+        return '#48B8B4';
       }
     }).svg(); // Render as SVG.
 
